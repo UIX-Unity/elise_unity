@@ -1,0 +1,28 @@
+﻿
+*---------------------- HEADER FIELD
+
+#PLAYER 1
+#GENRE 
+#TITLE 
+#ARTIST 
+#BPM 142
+#PLAYLEVEL 
+#RANK 3
+
+
+#LNTYPE 1
+
+#WAV01 003. 18_180bpm_48_180816_V01.wav
+
+
+*---------------------- MAIN DATA FIELD
+
+#COLOR 1
+#TYPE 1 //Basic note
+#00500:0,0
+#TYPE 2 //Long note
+#00700:0,0,1
+#TYPE 3 //Direction note
+#00900:0,0,1
+#TYPE 4 //Long direction note
+#01100:0,0,2,2

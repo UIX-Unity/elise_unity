@@ -1,0 +1,7 @@
+ManifestFileVersion: 0
+CRC: 1313301296
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: sheetdata
+      Dependencies: {}

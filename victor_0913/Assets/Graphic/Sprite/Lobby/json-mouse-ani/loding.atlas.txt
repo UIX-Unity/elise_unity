@@ -1,0 +1,90 @@
+
+loding.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+L_귀
+  rotate: false
+  xy: 2, 582
+  size: 230, 238
+  orig: 230, 238
+  offset: 0, 0
+  index: -1
+R_귀
+  rotate: false
+  xy: 2, 171
+  size: 198, 207
+  orig: 198, 207
+  offset: 0, 0
+  index: -1
+감은눈
+  rotate: true
+  xy: 213, 559
+  size: 21, 19
+  orig: 21, 19
+  offset: 0, 0
+  index: -1
+궁디
+  rotate: false
+  xy: 2, 28
+  size: 133, 141
+  orig: 133, 141
+  offset: 0, 0
+  index: -1
+꼬리
+  rotate: false
+  xy: 2, 822
+  size: 289, 191
+  orig: 289, 191
+  offset: 0, 0
+  index: -1
+눈
+  rotate: true
+  xy: 2, 2
+  size: 24, 41
+  orig: 24, 41
+  offset: 0, 0
+  index: -1
+뒷발
+  rotate: false
+  xy: 615, 907
+  size: 77, 106
+  orig: 77, 106
+  offset: 0, 0
+  index: -1
+몸통
+  rotate: false
+  xy: 452, 902
+  size: 161, 111
+  orig: 161, 111
+  offset: 0, 0
+  index: -1
+앞발
+  rotate: false
+  xy: 234, 730
+  size: 57, 90
+  orig: 57, 90
+  offset: 0, 0
+  index: -1
+얼굴
+  rotate: false
+  xy: 2, 380
+  size: 209, 200
+  orig: 209, 200
+  offset: 0, 0
+  index: -1
+치즈
+  rotate: false
+  xy: 293, 877
+  size: 157, 136
+  orig: 157, 136
+  offset: 0, 0
+  index: -1
+코
+  rotate: false
+  xy: 293, 840
+  size: 32, 35
+  orig: 32, 35
+  offset: 0, 0
+  index: -1

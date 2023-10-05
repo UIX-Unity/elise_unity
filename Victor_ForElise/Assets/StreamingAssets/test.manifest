@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1190099578
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 792056c0e0080177eebadd0588acc0bf
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 3f7d0c5e0986ec71841622bcb2f9be1c
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/04.Sounds/003. 18_180bpm_48_180816_V01.wav
+Dependencies: []

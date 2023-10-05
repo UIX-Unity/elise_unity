@@ -1,0 +1,117 @@
+
+LOADIN~1.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+L_side hair
+  rotate: true
+  xy: 571, 46
+  size: 340, 263
+  orig: 340, 263
+  offset: 0, 0
+  index: -1
+R_arm
+  rotate: true
+  xy: 2, 46
+  size: 340, 567
+  orig: 340, 567
+  offset: 0, 0
+  index: -1
+R_dress
+  rotate: true
+  xy: 1083, 31
+  size: 484, 517
+  orig: 484, 517
+  offset: 0, 0
+  index: -1
+R_leg
+  rotate: false
+  xy: 1825, 1290
+  size: 221, 756
+  orig: 221, 756
+  offset: 0, 0
+  index: -1
+R_side hair
+  rotate: false
+  xy: 1825, 895
+  size: 193, 393
+  orig: 193, 393
+  offset: 0, 0
+  index: -1
+back hair
+  rotate: false
+  xy: 2, 388
+  size: 1061, 1658
+  orig: 1061, 1658
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 1065, 517
+  size: 758, 1529
+  orig: 758, 1529
+  offset: 0, 0
+  index: -1
+top hair
+  rotate: true
+  xy: 836, 115
+  size: 271, 245
+  orig: 271, 245
+  offset: 0, 0
+  index: -1
+실험기계
+  rotate: true
+  xy: 1602, 99
+  size: 416, 430
+  orig: 416, 430
+  offset: 0, 0
+  index: -1
+
+LOADIN~12.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+L_arm
+  rotate: false
+  xy: 1047, 1216
+  size: 406, 625
+  orig: 406, 625
+  offset: 0, 0
+  index: -1
+L_back hair
+  rotate: false
+  xy: 2, 2
+  size: 614, 1082
+  orig: 614, 1082
+  offset: 0, 0
+  index: -1
+L_dress
+  rotate: false
+  xy: 1202, 697
+  size: 389, 405
+  orig: 389, 405
+  offset: 0, 0
+  index: -1
+L_leg
+  rotate: false
+  xy: 1455, 1104
+  size: 259, 737
+  orig: 259, 737
+  offset: 0, 0
+  index: -1
+R_back hair
+  rotate: false
+  xy: 618, 48
+  size: 582, 1036
+  orig: 582, 1036
+  offset: 0, 0
+  index: -1
+front hair
+  rotate: false
+  xy: 2, 1086
+  size: 1043, 755
+  orig: 1043, 755
+  offset: 0, 0
+  index: -1
