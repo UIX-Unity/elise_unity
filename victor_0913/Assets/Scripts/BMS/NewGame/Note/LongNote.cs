@@ -4,11 +4,13 @@ using System.Collections.Generic;
 using UnityEngine;
 namespace NewGame
 {
+    //Long note will be scored if player press and hold until end of note or it's will be failed if player release 
     public class LongNote : Note
     {
         protected float lineMovePercent = 0f, linePercentage = 0f;
         protected int lineLength;
         protected bool isHold;
+
         public override void Init(NoteData noteData)
         {
             base.Init(noteData);

@@ -1,7 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// Because we use NGUI systems so all the UI element we can directly code based on reference of them in the scene
+/// This class is only containing all the methods and variable of the visual of the note
+/// </summary>
 public class NoteVisual : MonoBehaviour
 {
     [Header("Note object visual")]
@@ -50,6 +53,11 @@ public class NoteVisual : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// Based on result the animation will act differently
+    /// </summary>
+    /// <param name="result">The result when player play the note</param>
+    /// <returns></returns>
     private IEnumerator Animation(bool result)
     {
         playingAnimation = true;

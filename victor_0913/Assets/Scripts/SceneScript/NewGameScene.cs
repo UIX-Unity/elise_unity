@@ -4,6 +4,10 @@ using UnityEngine;
 using NewGame;
 using System;
 using UnityEngine.SceneManagement;
+/// <summary>
+/// This class controls all the NewGame Scene (ex: the UI data initiation , handle endgame result , handle the music ,...) 
+/// We can see this type of manager each scene
+/// </summary>
 public enum GameState { Playing, Pause, Result }
 public class NewGameScene : Singleton<NewGameScene>
 {
@@ -49,17 +53,28 @@ public class NewGameScene : Singleton<NewGameScene>
     private void Awake()
     {
         info = Resources.Load("GameSetting") as GameSetting;
-        selectedMusic = info.selectedMusic;
-        audio.clip = selectedMusic.music;
         Application.targetFrameRate = 60;
         //MainMusic.GetInstance.PauseMusic();
 
+        SetUI();
+    }
+
+    private void SetUI()
+    {
+        selectedMusic = info.selectedMusic;
+        audio.clip = selectedMusic.music;
+        songNameLabel.text = selectedMusic.composer;
+        artistLabel.text = selectedMusic.name;
+
+        float maxMusicScore = info.selectedMusic.maxMusicScore[info.lv];
+        requireComboLabel.text = maxMusicScore.ToString();
+        
         comboLabel.text = "0";
         progressLabel.text = "0.00%";
         SetDifficultyLevel(info.lv);
-        songNameLabel.text = selectedMusic.composer;
-        artistLabel.text = selectedMusic.name;
+
     }
+
     private IEnumerator Start()
     {
         FadePanel.GetInstance.ScreenFade(true, 2f);

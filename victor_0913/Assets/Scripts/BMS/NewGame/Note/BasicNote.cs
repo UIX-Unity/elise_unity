@@ -5,6 +5,7 @@ using UnityEngine;
 
 namespace NewGame
 {
+    //Basic note is the note just handle when player tap and it's will return the result if hit or not
     public class BasicNote : Note
     {
         public override void Init(NoteData noteData)

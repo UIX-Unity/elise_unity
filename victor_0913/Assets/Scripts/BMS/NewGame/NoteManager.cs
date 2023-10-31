@@ -18,6 +18,7 @@ namespace NewGame
 
         public int noteID; // For debugging
     }
+    //This class control how notes in the screen pooling and controls the initiation of notes
     public class NoteManager : MonoBehaviour
     {
         [SerializeField] private NewGameScene newGameScene;

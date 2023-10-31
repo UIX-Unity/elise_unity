@@ -6,6 +6,7 @@ using System;
 
 namespace NewGame
 {
+    //This type is derive from long note that also have the direction at the end , player have to swipe the direction match with it to get score
     public class LongDirectionNote : LongNote
     {
         private SwipeDirection currentSwipeDir;

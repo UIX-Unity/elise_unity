@@ -6,6 +6,9 @@ using UnityEngine.Events;
 
 namespace NewGame
 {
+    /// <summary>
+    /// Base note class this class handle all logic and it's base class of all type of note that derives this class
+    /// </summary>
     public class Note : PoolableObject
     {
         protected NoteVisual visual;
@@ -25,6 +28,7 @@ namespace NewGame
         protected bool pressed = false;
         protected bool scoreCounted = false;
         private bool show = false;
+        //Event handlers
         private UIEventTrigger uIEventTrigger;
         private EventDelegate playerPress;
         private EventDelegate playerRelease;
@@ -39,7 +43,7 @@ namespace NewGame
             playerPress = new EventDelegate(this, nameof(PlayerPress));
             playerRelease = new EventDelegate(this, nameof(PlayerRelease));
             playerDragOut = new EventDelegate(this, nameof(DragOutHandler));
-            moveValue = info.BPM / (4 * 60f) * 1000f * info.speed * Time.fixedDeltaTime;
+            moveValue = info.BPM / (4 * 60f) * 1000f * info.speed * Time.fixedDeltaTime; // this fomula based on BPM calculation
         }
         private void OnEnable()
         {
@@ -145,7 +149,6 @@ namespace NewGame
             this.gameObject.SetActive(false);
         }
 
-        //TODO:make player press and release handler
         private void PlayerPress()
         {
             float pressAvaiablePercent = 0.8f;

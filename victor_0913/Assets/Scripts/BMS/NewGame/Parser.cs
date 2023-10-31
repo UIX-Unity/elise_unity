@@ -8,7 +8,9 @@ namespace NewGame
 {
     public class Parser : MonoBehaviour
     {
-        [SerializeField] TextAsset textAssetTesting;
+        //this field for just directly drag and drop the bms file into and test them
+        [SerializeField] TextAsset textAssetTesting; 
+        //Color pool for notes
         [SerializeField] Color[] colors;
         private GameSetting info;
         private NoteManager noteManager;
@@ -16,6 +18,7 @@ namespace NewGame
         private int fullCount;
         private int colorIndex;
         private int typeIndex;
+
         private void Awake()
         {
             info = Resources.Load("GameSetting") as GameSetting;
@@ -24,9 +27,10 @@ namespace NewGame
             TextParser();
         }
 
+        //Start reading the BMS file
         private void TextParser()
         {
-            TextAsset textAsset = textAssetTesting;
+            TextAsset textAsset = textAssetTesting; // this text asset loaded from GameSetting.selectedMusic.levelBms[info.lv]
             TextReader reader = new StringReader(textAsset.text);
             string lineData;
             do
@@ -113,6 +117,7 @@ namespace NewGame
             }
         }
 
+        //Add Notedata into the list
         private void AddNoteData(int barNum, int channelNum, int typeIndex, int colorIndex, string[] stringList)
         {
             NoteData noteData = new NoteData();
@@ -149,6 +154,7 @@ namespace NewGame
             return int.Parse(data.Substring(6, 1));
         }
 
+        //Handler of the type of the note data in BMS file
         private NoteData TypeHandler(NoteType noteType, NoteData noteData, String[] stringList)
         {
             switch (noteType)

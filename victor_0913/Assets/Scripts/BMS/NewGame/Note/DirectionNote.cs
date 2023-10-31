@@ -4,11 +4,13 @@ using System.Collections.Generic;
 using UnityEngine;
 namespace NewGame
 {
+    //With direction note player have to swipe the direction to match the direction in the note to get score
     public class DirectionNote : Note
     {
         private SwipeDirection swipeDirection;
         private SwipeDirection correctSwipeDirection;
         private bool isSwiping;
+
         public override void Init(NoteData noteData)
         {
             base.Init(noteData);
@@ -30,6 +32,7 @@ namespace NewGame
             base.ReturnToPool();
 
         }
+
         protected override void PressHandler()
         {
             pressedPosition = Input.mousePosition;
@@ -47,7 +50,7 @@ namespace NewGame
                 visual.PlayAnimation(true);
             }
         }
-        //TODO: Change reference of gameScene because gameScene data cannot be in visual class
+
         private void CalculateScoreSwipe()
         {
             if (swipeDirection == correctSwipeDirection)

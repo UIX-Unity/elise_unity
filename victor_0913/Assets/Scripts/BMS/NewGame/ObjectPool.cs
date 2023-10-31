@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
-using System.Linq;
+//The ObjectPooling pattern that i use 
 public class ObjectPool
 {
     private GameObject Prefab;
@@ -34,30 +34,9 @@ public class ObjectPool
             AvailableObjectsPool.Add(poolableObject);
         }
     }
-    public GameObject CreateMoreInstance()
-    {
-        GameObject poolableObject = GameObject.Instantiate(Prefab, Vector3.zero, Quaternion.identity, Holder.transform);
-        poolableObject.gameObject.SetActive(false); // PoolableObject handles re-adding the object to the AvailableObjects
-        AvailableObjectsPool.Add(poolableObject);
-        return poolableObject;
-    }
+
     public T GetPooledObject<T>() where T : PoolableObject
     {
-        // if(!AvailableObjectsPool.Any())
-        // {
-        //     GameObject instance = CreateMoreInstance();
-        //     T component = instance.AddComponent<T>();
-        //     component.Parent = this;
-        //     return component;
-        // }
-        // else if (AvailableObjectsPool.Any())
-        // {
-        //     GameObject instance = AvailableObjectsPool[AvailableObjectsPool.Count - 1];
-        //     if(instance.TryGetComponent<T>(out T component))
-        //     {
-        //         return component;
-        //     }
-        // }
         foreach (GameObject child in AvailableObjectsPool)
         {
             if (child.TryGetComponent<T>(out T component))
